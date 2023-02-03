@@ -1,17 +1,18 @@
 import { Card, Image, Text, Badge, Button, Group, Rating } from "@mantine/core";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ProductCard = ({ product, addToCart, removeFromCart }) => {
   const cartItems = JSON.parse(localStorage.getItem("cartItems"));
   return (
     <Card shadow="sm" p="lg" radius="md" withBorder style={{ width: "300px" }}>
-      <Card.Section component="a" href={`/details/${product.id}`}>
+      <Link to={`/details/${product?.id}`}>
         <img
           src={product.image}
           height={100}
           style={{ margin: "10px auto", display: "block" }}
         />
-      </Card.Section>
+      </Link>
       <Badge variant="gradient" gradient={{ from: "indigo", to: "cyan" }}>
         {product.category}
       </Badge>
