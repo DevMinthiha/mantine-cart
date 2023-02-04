@@ -7,7 +7,7 @@ const Success = () => {
     <Flex justify={"center"} align={"center"} style={{ height: "100vh" }}>
       <Flex justify={"center"} direction={"column"} align={"center"} gap={10}>
         <iframe
-          style={{ background: "transparent", height: "500px", width: "500px" }}
+          style={{ background: "transparent", height: "300px", width: "300px" }}
           src="https://embed.lottiefiles.com/animation/83548"
         ></iframe>
         <Link to="/">

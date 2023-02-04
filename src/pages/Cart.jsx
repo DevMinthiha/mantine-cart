@@ -62,7 +62,7 @@ const Cart = () => {
                 <Text fz={"30px"} color={"cyan"} weight={"bold"} mb={10}>
                   Your Cart is Empty!
                 </Text>
-                <iframe src="https://embed.lottiefiles.com/animation/9091"></iframe>
+                <iframe src="https://embed.lottiefiles.com/animation/9091" style={{width: "200px"}}></iframe>
                 <Flex gap={10}>
                   <Link to="/">
                     <Button
